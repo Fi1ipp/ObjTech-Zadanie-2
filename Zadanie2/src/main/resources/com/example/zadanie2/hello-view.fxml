@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.zadanie2.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" prefHeight="124.0" prefWidth="321.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="com.example.zadanie2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox prefHeight="32.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="tf" prefHeight="25.0" prefWidth="134.0" />
+            <Label prefHeight="25.0" prefWidth="51.0" text="lb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Convert" prefHeight="25.0" prefWidth="96.0" text="Convert" />
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="mg" />
+            <Label fx:id="g" />
+            <Label fx:id="kg" />
+            <Label fx:id="t" />
+         </children>
+      </VBox>
+   </children>
 </VBox>
